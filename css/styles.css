@@ -1,0 +1,524 @@
+
+*{box-sizing: border-box;}
+
+
+
+/************ GENERAL SELECTOR *************/
+
+body{
+    margin: 0;
+}
+
+
+section{
+    height: 100vh;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1{
+    font-family: "Arvo";
+    font-size: 7rem;
+    padding-left: 20px;
+    color: rgba(230, 207, 136, 1);
+}
+
+h2{
+    font-family: "Arvo";
+    font-size: 3rem;
+}
+
+p{
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: small;
+}
+
+/************ SPECIFIC SELECTOR ************/
+
+.menu-navigation li{
+    padding: 7px 0;
+    text-align: right;
+}
+
+.menu-navigation li a{
+    color: rgba(87, 120, 184, 1);
+    text-decoration: none;
+}
+
+#frontpage div {
+    display: flex;
+    align-items: center;
+    flex-grow: 100;
+}
+
+#leadership .article-right img{
+    margin: 40px 0;
+}
+
+#life-balance article{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/************* CLASS SELECTOR **************/
+
+/***** FLEXBOX *****/
+
+.flex{
+    display: flex;
+}
+
+.row-wrap{
+    flex-flow: row wrap;
+}
+
+.column-wrap{
+    flex-flow: column wrap;
+}
+
+.space-around{
+    justify-content: space-around;
+}
+
+.frontpage-presentation-div{
+    max-width: 45%;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+/***** PSEUDO ID *****/
+
+.menu-navigation{
+    list-style: none;
+    margin-top: 40px;
+}
+
+.final-footer{
+    width: 100%;
+    padding: 20px 0 15px 20px;
+    background-color: rgba(245, 249, 255, 1);
+}
+
+.footer-hr{
+    width: 25rem;
+    border: solid;
+    position: relative;
+    right: 36%;
+    bottom: 25px;
+    color: rgba(230, 207, 136, 1);
+}
+
+.footer-padding{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer-button{
+    color: #FFFFFF;
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 20px;
+    margin: 25px 25px 15px 0;
+    background-color: #E6CF88;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+}
+
+/***** WIDTH & HEIGHT ****/
+
+.width-25{
+    width: 25%;
+}
+
+.width-30{
+    width: 30%;
+}
+
+.width-40{
+    width: 40%;
+}
+
+.half-width{
+    width: 50%;
+}
+
+.width-60{
+    width: 60%;
+}
+
+.width-70{
+    width: 70%;
+}
+
+.width-75{
+    width: 75%;
+}
+
+.width-80{
+    width: 80%;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.heigth-30{
+    height: 30%;
+}
+
+.heigth-35{
+    height: 35%;
+}
+
+.half-heigth{
+    height: 50%;
+}
+
+.heigth-60{
+    height: 60%;
+}
+
+.heigth-70{
+    height: 70%;
+}
+
+.full-heigth{
+    height: 100%;
+}
+
+/***** PADDING MARGIN ETC *****/
+
+.article-padding{
+    padding: 20px 15px 20px 15px;
+}
+
+.article-padding2{
+    padding: 5px 15px 5px 15px;
+}
+
+.justified-p{
+    padding: 0 40px;
+}
+
+.padding-top-20{
+    padding-top: 20px;
+}
+
+.justified-left-p{
+    padding: 20px 20px 0 40px;
+}
+
+.testimonial-margin{
+    margin: auto 0;
+}
+
+/***** OTHER *****/
+
+.text-center{
+    text-align: center;
+}
+
+
+.blue-background{
+    background-color: rgba(245, 249, 255, 1);
+}
+
+.no-border{
+    border: none;
+}
+
+.deported-text{
+    position: relative;
+    bottom: 130px;
+}
+
+.columns2{
+    columns: 2;
+}
+
+.section-name-hr{
+    width: 25rem;
+    border: solid;
+    position: relative;
+    right: 25%;
+    bottom: 20px;
+    color: rgba(230, 207, 136, 1);
+}
+
+.presentation-button{
+    color: #FFFFFF;
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 20px;
+    margin: 30px 0 0 30px;
+    background-color: #E6CF88;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+}
+
+.portrait-background{
+    background-image: url(../images/portrait.JPG);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.white-filter{
+    position: absolute;
+}
+
+.testimonial-info{
+    width: 300px;
+}
+
+.testimonial-cards{
+    width: 350px;
+}
+
+.testimonial-pic{
+    height: 100%;
+    object-fit: cover;
+}
+
+/*************** ID SELECTOR ***************/
+
+/***** CONTAINERS *****/
+
+#container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#header{
+    width: 25%;
+    border: solid 1px green;
+    background-color: rgb(40, 40, 69);
+}
+
+#ensemble{
+    display: flex;
+    flex-flow: column wrap;
+    width: 75%;
+}
+
+#menu-container{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    margin-right: 25%;
+    position: sticky;
+    top: 30px;
+}
+
+/***** SECTION ID *****/
+
+#frontpage{
+    display: flex;
+    flex-flow: row;
+    justify-content: left;
+}
+
+#presentation{
+    display: flex;
+    flex-flow: row;
+}
+
+#leadership{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#life-balance{
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 5rem;
+}
+
+#coaching{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/***** OTHER *****/
+
+#famille{
+    max-width: 90%;
+}
+
+#famille img{
+    object-fit: contain;
+    max-width: 100%;
+}
+
+#coach{
+    object-fit: contain;
+    max-width: 60%;
+}
+
+#collegues{
+    object-fit: contain;
+    max-width: 80%;
+}
+
+#life-success{
+    position: relative;
+    top: 60px;
+}
+
+/**********************************************/
+/*************** MEDIA QUERRIES ***************/
+/**********************************************/
+
+/***************************/
+/********** PHONE **********/
+
+@media all and (max-width: 576px){
+
+    /******** GENERAL SELECTOR ********/
+
+    header{
+        width: 100%;
+    }
+
+    /******* SPECIFIC SELECTOR *******/
+
+    .frontpage-presentation-div p{
+        font-size: 1rem;
+    }
+
+    #presentation article hr{
+        left: 0%;
+    }
+
+    #leadership article{
+        width: 100%;
+        padding: 10px 10px 5px 10px;
+    }
+
+    #life-balance article div{
+        width: 100%;
+    }
+
+    #life-balance .heigth-70{
+        height: 40%;
+    }
+
+    #life-balance article .heigth-70{
+        height: 90%;
+    }
+
+    #coaching article{
+        width: 100%;
+    }
+
+    /********* CLASS SELECTOR ********/
+
+    .frontpage-presentation-div{
+        max-width: 100%;
+    }
+
+    .white-filter{
+        background-color: white;
+        opacity: 0.40;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .z-0{
+        z-index: 0;
+    }
+
+    .z-1{
+        z-index: 1;
+    }
+
+    .z-2{
+        z-index: 2;;
+    }
+
+    .images{
+        position: absolute;
+        display: none;
+    }
+
+    .mobile-background-leadership{
+        background-image: url(../images/groupe.jpg);
+        background-size: cover;
+        object-position: 20% 10%;
+    }
+
+    .columns2{
+        columns: 1;
+    }
+    
+    /********** ID SELECTOR **********/
+    /***** CONTAINERS *****/
+
+    #header{
+        width: 100%;
+    }
+
+    #ensemble{
+        width: 100%;
+    }
+
+    #menu-container{
+        display: flex;
+        flex-flow: row;
+        margin : 10px;
+        position: sticky;
+        top: 30px;
+        justify-content: space-between;
+    }
+
+    /* NAVIGATION */
+
+    #presentation{
+        text-align: center;
+    }
+}
+
+/***************************/
+/********** TABLET *********/
+
+@media all and (min-width: 577px) and (max-width:960px){
+
+    /******** GENERAL SELECTOR ********/
+
+
+    /********** ID SELECTOR **********/
+    /***** CONTAINERS *****/
+}
+
+/***************************/
+/********** PRINT *********/
+
+@media print{
+
+    /******** GENERAL SELECTOR ********/
+
+
+    /********** CLASS SELECTOR **********/
+
+    .images{
+        display: none;
+        position: absolute;
+    }
+
+    /********** ID SELECTOR **********/
+    /***** CONTAINERS *****/
+}
